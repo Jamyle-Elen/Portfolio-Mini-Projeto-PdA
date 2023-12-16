@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;text-decoration: none;list-style: none;
+    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;text-decoration: none;list-style: none;font-family: 'League Spartan', sans-serif;
 }
 
 body {
@@ -13,18 +13,21 @@ body {
     color: #fff;
 }
 
+/* Texto animado */
 .txt-animado {
     font-size: 45px;
-    font-weight: 300;
+    font-weight: 600;
+    width: 28vw;
 }
 
 .txt-animado span {
     position: relative;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .txt-animado span::before {
     content: "";
-    color: blueviolet;
+    color: #3A7944;
     animation: words 20s infinite;
 }
 
@@ -59,15 +62,15 @@ body {
         content: "Jamyle Elen";
     }
     21%, 40% {
-        content: "Jamyle Elen";
+        content: "Programadora";
     }
     41%, 60% {
-        content: "Jamyle Elen";
+        content: "Criativa";
     }
     61%, 80% {
         content: "Jamyle Elen";
     }
     81%, 100% {
-        content: "Jamyle Elen";
+        content: "Programadora";
     }
 }
