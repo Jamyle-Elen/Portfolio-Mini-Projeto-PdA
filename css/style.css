@@ -1,0 +1,45 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;text-decoration: none;list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+}
+
+.txt-animado {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.txt-animado span {
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: blueviolet;
+    animation: words 20s infinite;
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Jamyle Elen";
+    }
+    21%, 40% {
+        content: "Jamyle Elen";
+    }
+    41%, 60% {
+        content: "Jamyle Elen";
+    }
+    61%, 80% {
+        content: "Jamyle Elen";
+    }
+    81%, 100% {
+        content: "Jamyle Elen";
+    }
+}
