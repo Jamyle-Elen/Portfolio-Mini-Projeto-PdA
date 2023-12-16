@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    height: 4rem;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     padding: 5px 200px 0 200px;
@@ -101,7 +101,8 @@ header {
 .txt-animado {
     font-size: 45px;
     font-weight: 600;
-    width: 28vw;
+    width: 35vw;
+    margin-bottom: 10px;
 }
 
 .txt-animado span {
@@ -157,4 +158,89 @@ header {
     81%, 100% {
         content: "Programadora";
     }
+}
+
+/* Section 1 */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 200px 5px 200px;
+    height: calc(100vh - 12vh);
+}
+
+.modulo_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons {
+    gap: 20px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icons i {
+    border: var(--green) .1px solid;
+    border-radius: 20px;
+    padding: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icons a i:hover {
+    background-color: var(--green);
+    transition: .4s;
+}
+
+.one h2 {
+    color: #3A7944;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.one p {
+    width: 35vh;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn button {
+    width: 11rem;
+    height: 2rem;
+}
+
+.btn button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+.btn_1  {
+    background-image: linear-gradient(to right, #1F3D24, #3A7944, #51B261);
+}
+
+.btn_2  {
+    background-image: linear-gradient(to right, #353535, #595959,#E2E2E2);
+}
+
+/* M1 */
+
+.modulo_two {
+    justify-content: center;
+    align-self: center;
+}
+
+.modulo_two img {
+    border-radius: 500px;
 }
