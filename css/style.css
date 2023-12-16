@@ -7,6 +7,7 @@
 :root {
     --green: #3A7944;
     --green-two: #51B261;
+    --green-3: #1F3D24;
     --pointer: #000;
     --text-color: #fff;
 }
@@ -26,7 +27,7 @@ body {
     justify-content: space-between;
     background-color: var(--pointer);
     transition: .8s all linear;
-    padding: 5px 200px 5px 200px;
+    padding: 5px 240px 5px 240px;
 }
 
 .circle i {
@@ -34,11 +35,15 @@ body {
 }
 
 header {
-    height: 7vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
-    padding: 5px 200px 0 200px;
+    padding: 5px 240px 0 240px;
     background-color: var(--green);
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(60, 143, 22, 0.1);
 }
 
 .logo {
@@ -52,13 +57,13 @@ header {
     color: var(--text-color);
     font-weight: 600;
     letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .logo span {
     color: var(--pointer);
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -75,11 +80,12 @@ header {
 .sidebar li a {
     color: var(--text-color);
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .sidebar li a:hover {
     color: var(--pointer);
-    transition: .4s all linear;
+    transition: background-color .5s ease;
 }
 
 /* Scrollbar */
@@ -99,10 +105,10 @@ header {
 }
 
 .txt-animado {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 600;
-    width: 35vw;
-    margin-bottom: 10px;
+    width: 40vw;
+    margin-bottom: 12px;
 }
 
 .txt-animado span {
@@ -162,11 +168,11 @@ header {
 
 /* Section 1 */
 
-section {
+.one {
     display: flex;
     justify-content: space-between;
-    padding: 5px 200px 5px 200px;
-    height: calc(100vh - 12vh);
+    padding: 5px 240px 5px 240px;
+    height: calc(100vh - 8vh);
 }
 
 .modulo_one {
@@ -178,14 +184,14 @@ section {
 .icons {
     gap: 20px;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .icons i {
     border: var(--green) .1px solid;
     border-radius: 20px;
     padding: 3px;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -202,9 +208,10 @@ section {
 }
 
 .one p {
-    width: 35vh;
+    width: 37vh;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 19px;
+    font-weight: 300;
 }
 
 .btn {
@@ -213,8 +220,9 @@ section {
 }
 
 .btn button {
-    width: 11rem;
-    height: 2rem;
+    width: 12rem;
+    height: 2.3rem;
+    cursor: pointer;
 }
 
 .btn button a {
@@ -226,6 +234,7 @@ section {
     font-size: 16px;
     text-align: center;
 }
+
 .btn_1  {
     background-image: linear-gradient(to right, #1F3D24, #3A7944, #51B261);
 }
