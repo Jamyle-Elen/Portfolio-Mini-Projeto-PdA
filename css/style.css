@@ -6,14 +6,29 @@
 
 body {
     height: 100vh;
-    display: flex;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: #fff;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3A7944;
+    border-radius: 10px;
+}
+
 /* Texto animado */
+.txt {
+    display: flex;
+}
+
 .txt-animado {
     font-size: 45px;
     font-weight: 600;
@@ -74,5 +89,3 @@ body {
         content: "Programadora";
     }
 }
-
-/* END Texto animado */
