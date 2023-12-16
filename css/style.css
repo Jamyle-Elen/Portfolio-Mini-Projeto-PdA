@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;text-decoration: none;list-style: none;font-family: 'League Spartan', sans-serif;
+    margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;text-decoration: none;list-style: none;font-family: 'League Spartan', sans-serif;border: none;
+}
+
+:root {
+    --green: #3A7944;
+    --green-two: #51B261;
+    --pointer: #000;
+    --text-color: #fff;
 }
 
 body {
@@ -9,8 +16,70 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--pointer);
     color: #fff;
+}
+
+.margin-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--pointer);
+    transition: .8s all linear;
+    padding: 5px 200px 5px 200px;
+}
+
+.circle i {
+    font-size: 10px;
+}
+
+header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 200px 0 200px;
+    background-color: var(--green);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.logo a {
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 26px;
+}
+
+.logo span {
+    color: var(--pointer);
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    padding-left: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sidebar li a {
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.sidebar li a:hover {
+    color: var(--pointer);
+    transition: .4s all linear;
 }
 
 /* Scrollbar */
