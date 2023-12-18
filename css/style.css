@@ -13,8 +13,8 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     align-items: center;
     justify-content: center;
     background-color: var(--pointer);
@@ -176,7 +176,7 @@ header {
     margin-top: 7.5vh;
 }
 
-.one::before {
+/* .one::before {
     content: '';
     background-image: url('../img/glitter.png');
     background-size: cover;
@@ -186,8 +186,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.04;
-}
+    opacity: .3;
+} */
 
 .modulo_one {
     display: flex;
@@ -210,7 +210,7 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.icons a i:hover {
+.icons i:hover {
     background-color: var(--green);
     transition: .4s;
 }
@@ -265,5 +265,41 @@ header {
 }
 
 .modulo_two img {
-    border-radius: 500px;
+    border-radius: 500px
+}
+
+#section_two  {
+    border: red solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.hb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hb p {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.hb h3 {
+    font-size: 25px;
+    margin: 10px 0 15px 0;
+}
+
+.hb span {
+    color: var(--green);
+    border: var(--green) solid;
+    width: 35px;
+    border-radius: 10px;
+}
+
+.linguagens {
+    display: flex;
+    flex-direction: row;
+    border: red solid;
+    justify-content: center;
 }
