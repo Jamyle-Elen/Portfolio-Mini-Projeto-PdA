@@ -264,8 +264,23 @@ header {
     align-self: center;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .modulo_two img {
-    border-radius: 500px
+    border-radius: 500px;
+    max-width: 600px;
+    transform: translateY(0);
+    animation: float 5s ease-in-out infinite;
 }
 
 #section_two  {
