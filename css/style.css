@@ -8,6 +8,7 @@
     --green: #3A7944;
     --green-two: #51B261;
     --green-3: #1F3D24;
+    --cinza: #4d4b4b;
     --pointer: #000;
     --text-color: #fff;
 }
@@ -81,11 +82,12 @@ header {
     color: var(--text-color);
     text-transform: uppercase;
     font-size: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .sidebar li a:hover {
     color: var(--pointer);
-    transition: background-color .5s ease;
+    transition: .4s;
 }
 
 /* Scrollbar */
@@ -172,7 +174,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 5px 240px 5px 240px;
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 18vh);
     margin-top: 7.5vh;
 }
 
@@ -250,11 +252,33 @@ header {
 }
 
 .btn_1  {
-    background-image: linear-gradient(to right, #1F3D24, #3A7944, #51B261);
+    background-color: var(--green);
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid var(--green);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+  
+.btn_1:hover {
+        background-color: transparent;
+        border-color: var(--green-3);
 }
 
 .btn_2  {
-    background-image: linear-gradient(to right, #353535, #595959,#E2E2E2);
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid var(--cinza);
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: var(--cinza);
+}
+
+.btn_2:hover {
+    background-color: transparent;
+    border-color: var(--cinza);
 }
 
 /* M1 */
@@ -262,6 +286,7 @@ header {
 .modulo_two {
     justify-content: center;
     align-self: center;
+    cursor: pointer;
 }
 
 @keyframes float {
@@ -284,7 +309,6 @@ header {
 }
 
 #section_two  {
-    border: red solid;
     display: flex;
     flex-direction: column;
 }
@@ -315,6 +339,18 @@ header {
 .linguagens {
     display: flex;
     flex-direction: row;
-    border: red solid;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.linguagens img {
+    width: 120px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.linguagens img:hover {
+    transform: scale(1.05);
+    transition: .6s;
 }
