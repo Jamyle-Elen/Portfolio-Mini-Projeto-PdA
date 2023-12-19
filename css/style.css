@@ -65,7 +65,6 @@ header {
     color: var(--green);
     font-weight: 900;
     font-size: 30px;
-
 }
 
 .sidebar {
@@ -439,11 +438,21 @@ abbr {
 
 .element-1 {
     display: flex;
+    gap: 20px;
+}
+
+.subdiv {
+    background-color: var(--green-two);
+    position: relative;
 }
 
 .div {
-    border: red solid;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .margin-top-2 {
