@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--pointer);
+    background-color: var(--green);
     transition: .8s all linear;
     padding: 5px 240px 5px 240px;
 }
@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 5px 240px 0 240px;
-    background-color: var(--green);
+    background-color: var(--pointer);
     position: fixed;
     z-index: 1000;
     width: 100vw;
@@ -62,7 +62,7 @@ header {
 }
 
 .logo span {
-    color: var(--pointer);
+    color: var(--green);
     font-weight: 900;
     font-size: 30px;
 
@@ -402,4 +402,56 @@ abbr {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: var(--green-3);
+    display: flex;
+    flex-direction: row;
+    padding: 100px 240px 100px 240px;
+    justify-content: space-between;
+}
+
+.element-0 {
+    width: 500px;
+}
+
+.element-0 h2 {
+    font-size: 30px;
+}
+
+.element-0 p {
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+}
+
+.element-1 {
+    display: flex;
+}
+
+.div {
+    border: red solid;
+    padding: 20px;
+}
+
+.margin-top-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--pointer);
+    transition: .8s all linear;
+    padding: 5px 240px 5px 240px;
+}
 
