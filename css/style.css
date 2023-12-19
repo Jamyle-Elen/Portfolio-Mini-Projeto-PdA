@@ -286,7 +286,6 @@ header {
 .modulo_two {
     justify-content: center;
     align-self: center;
-    cursor: pointer;
 }
 
 @keyframes float {
