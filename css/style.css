@@ -39,6 +39,7 @@ body {
 }
 
 header {
+    border: #333 solid;
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -74,7 +75,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 200px;
+    gap: 150px;
     padding-left: 40px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -88,7 +89,7 @@ header {
 }
 
 .sidebar li a:hover {
-    color: var(--pointer);
+    color: var(--green);
     transition: .4s;
 }
 
@@ -178,7 +179,7 @@ header {
     padding: 5px 240px 5px 240px;
     height: calc(100vh - 18vh);
     margin-top: 7.5vh;
-    background-image: url(../img/mold.png), url(../img/mold.png);
+    background-image: url(../img/mold.png);
     background-repeat: no-repeat;
     background-size: 800px;
     background-position: 100px 100px;
@@ -371,7 +372,8 @@ abbr {
 .soft-skills-all {
     display: flex;
     flex-direction: row;
-    padding: 5px 500px 5px 500px;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -379,7 +381,7 @@ abbr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    width: 260px;
     height: 250px;
     padding: 25px;
     text-align: justify;
@@ -493,21 +495,6 @@ abbr {
     margin-right: 5px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     background-color: var(--green-3);
     display: flex;
@@ -542,3 +529,311 @@ abbr {
     transition: .8s all linear;
     padding: 5px 240px 5px 240px;
 }
+
+@media screen and (max-width: 1720px) {
+    .sidebar li a {
+        font-size: 15px;
+    }
+
+    .modulo_two img {
+        max-width: 400px;
+    }
+
+    .icons i {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .txt-animado {
+        font-size: 45px;
+        font-weight: 600;
+        width: 40vw;
+    }
+
+    .one h2 {
+        font-size: 20px;
+    }
+
+    .one p {
+        font-size: 15px;
+    }
+
+    
+    .btn button {
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .soft-skills-all {
+        padding: 0;
+    }    
+}
+
+@media screen and (max-width: 1400px) {
+    .sidebar li a {
+        font-size: 10px;
+    }
+
+    .soft-skills-all {
+        padding: 0;
+    }
+
+    .element-0 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .sidebar {
+        gap: 95px;
+    }
+
+    .sidebar li a {
+        font-size: 14px;
+    }
+
+    .modulo_two img {
+        max-width: 350px;
+    }
+
+    .icons i {
+        font-size: 18px;
+    }
+
+    .txt-animado {
+        font-size: 30px;
+    }
+
+    .one h2 {
+        font-size: 15px;
+    }
+
+    .one p {
+        font-size: 12px;
+    }
+
+    
+    .btn button {
+        width: 8rem;
+        height: 1.7rem;
+    }
+
+    .btn button a {
+        font-size: 9px;
+    }
+
+    .soft-skills-all {
+        padding: 0;
+    }
+
+    .linguagens img {
+        width: 90px;
+    }
+
+    .soft-skills {
+        width: 230px;
+        height: 230px;
+    }
+
+    .soft-skills img {
+        width: 45px;
+    }
+
+    .soft-skills h5 {
+        font-size: 13px;
+    }
+
+    .soft-skills p {
+        font-size: 12px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo a {
+        font-size: 25px;
+    }
+
+    .sidebar {
+        gap: 75px;
+    }
+
+    .sidebar li a {
+        font-size: 8px;
+    }
+
+    .modulo_two img {
+        max-width: 200px;
+    }
+
+    .icons i {
+        font-size: 15px;
+    }
+
+    .one h2 {
+        font-size: 14px;
+    }
+
+    .btn button a {
+        font-size: 8px;
+    }
+
+    .linguagens img {
+        width: 70px;
+    }
+
+    .soft-skills {
+        width: 200px;
+        height: 200px;
+    }
+
+    .soft-skills img {
+        width: 40px;
+    }
+
+    .soft-skills h5 {
+        font-size: 11px;
+    }
+
+    .soft-skills p {
+        font-size: 10px;
+    }
+
+    .element-0 h2 {
+        font-size: 20px;
+    }
+
+    .element-0 p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modulo_one {
+        margin-top: 25px;
+        padding-bottom: 70px;
+        width: 400px;
+    }
+
+    .modulo_two {
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .sidebar {
+        display: none;
+    }
+
+    .modulo_two img {
+        width: 150px;
+    }
+
+    .linguagens img {
+        width: 50px;
+    }
+
+    .soft-skills {
+        width: 150px;
+        height: 150px;
+    }
+
+    .soft-skills img {
+        width: 30px;
+    }
+
+    .soft-skills h5 {
+        font-size: 10px;
+    }
+
+    .soft-skills p {
+        font-size: 8px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .margin-top {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .margin-top p {
+        font-size: 10px;
+    }
+
+    .circle i {
+        width: 8px;
+    }
+
+    .margin-top-2 p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .icons i {
+        font-size: 15px;
+    }
+
+    .txt-animado {
+        font-size: 25px;
+    }
+
+    .one h2 {
+        font-size: 13px;
+    }
+
+    .one p {
+        font-size: 11px;
+    }
+
+    
+    .btn button {
+        width: 7rem;
+        height: 1.5rem;
+    }
+
+    .btn button a {
+        font-size: 8px;
+    }
+
+    .soft-skills-all {
+        padding: 0;
+    }
+
+    .linguagens img {
+        width: 90px;
+    }
+
+    .soft-skills {
+        width: 230px;
+        height: 230px;
+    }
+
+    .soft-skills img {
+        width: 45px;
+    }
+
+    .soft-skills h5 {
+        font-size: 13px;
+    }
+
+    .soft-skills p {
+        font-size: 12px;
+    }
+}
+
+
