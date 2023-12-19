@@ -11,6 +11,9 @@
     --cinza: #4d4b4b;
     --pointer: #000;
     --text-color: #fff;
+    --js-icon: #af9942;
+    --css-icon: #A87DCB;
+    --html-icon: #a84e39;
 }
 
 body {
@@ -399,6 +402,96 @@ abbr {
     font-size: 16px;
 }
 
+.three {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 100px 0;
+} 
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding: 20px 260px 20px 260px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.project-card img:hover {
+    transition: .4s;
+    opacity: 1;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--green-3);
+}
+
+#js-projeto {
+    color: var(--js-icon);
+    font-size: 16px;
+}
+
+#css-projeto {
+    color: var(--css-icon);
+    font-size: 16px;
+}
+
+#html-projeto {
+    color: var(--html-icon);
+    font-size: 16px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-links a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.project-links i {
+    margin-right: 5px;
+    }
 
 
 
@@ -418,41 +511,27 @@ abbr {
 .footer {
     background-color: var(--green-3);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 100px 240px 100px 240px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .element-0 {
-    width: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
 }
 
 .element-0 h2 {
     font-size: 30px;
+    font-weight: 400;
 }
 
 .element-0 p {
     font-size: 18px;
     margin: 15px 0 15px 0;
-}
-
-.element-1 {
-    display: flex;
-    gap: 20px;
-}
-
-.subdiv {
-    background-color: var(--green-two);
-    position: relative;
-}
-
-.div {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .margin-top-2 {
@@ -463,4 +542,3 @@ abbr {
     transition: .8s all linear;
     padding: 5px 240px 5px 240px;
 }
-

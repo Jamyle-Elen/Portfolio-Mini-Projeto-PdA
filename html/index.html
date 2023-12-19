@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="shortcut icon" href="../" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio</title>
@@ -22,7 +23,7 @@
         <ul class="sidebar">
             <li type="active" class="home"><a href="#section_one">Sobre mim</a></li>
             <li class="skills"><a href="#section_two">Habilidades</a></li>
-            <li class="atv"><a href="">Atividades</a></li>
+            <li class="atv"><a href="#section_three">Atividades</a></li>
         </ul>
     </header>
 
@@ -53,7 +54,8 @@
             <abbr title="DEVELOPER"><img class="img_dev" src="../img/DEV3.jpeg" width="600px" alt="Imagem DEV"></abbr>
         </div>
     </section>
-    <section id="section_two" class="two">
+    <hr id="section_two">
+    <section  class="two">
         <div class="linguagens">
             <abbr class="ling" title="JavaScript"><img class="more" src="../img/linguagens/javascript-logo-240.png" alt="JavaScript"></abbr>
             <abbr class="ling" title="React"><img class="more" src="../img/linguagens/react-logo-240.png" alt="React"></abbr>
@@ -81,36 +83,133 @@
             </div>
         </div>
     </section>
-    <section class="three">
-        <h3>Projetos</h3>
-        <div class="linha"></div>
-
-        <div class="projetos">
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
-            <div class="pj">
-                <p>Interface NETFLIX <span>CONCLUED</span></p>
-                <img src="../img/projetos/Snake Game.png" width="300px" alt="">
-            </div>
+    <section id="section_three" class="three">
+        <div class="info">
+            <h2>Projetos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="linha"></div>
         </div>
+        <div class="projects-container">
+            <div class="project-card">
+              <img src="../img/projetos/Snake Game.png" alt="Projeto 1">
+              <div class="project-info">
+                <div class="project-title">Snake Game <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                <div id="js-projeto" class="project-title"><i class='bx bxs-circle' style='color:#f7cd2c'  ></i>JS</div>
+                <div class="project-links">
+                  <a href="https://github.com/Jamyle-Elen/Jogo-da-cobrinha" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a href="link_para_pagina_web" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Ver Projeto
+                  </a>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Projeto 2 -->
+            <div class="project-card">
+              <img src="../img/projetos/mode.png" alt="Projeto 2">
+              <div class="project-info">
+                <div class="project-title">Light/ Dark mode <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                <div id="css-projeto" class="project-title"><i class='bx bxs-circle' style='color:#A87DCB'  ></i>CSS</div>
+                <div class="project-links">
+                  <a href="https://github.com/Jamyle-Elen/MINI_Projetos-Alternar_Tema?tab=readme-ov-file" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <a href="link_para_pagina_web" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Ver Projeto
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="project-card">
+                <img src="../img/projetos/card-animado.png" alt="Projeto 2">
+                <div class="project-info">
+                  <div class="project-title">Animated Card - Flip Card
+                    <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                  <div id="css-projeto" class="project-title"><i class='bx bxs-circle' style='color:#A87DCB'  ></i>CSS</div>
+                  <div class="project-links">
+                    <a href="https://github.com/Jamyle-Elen/Animated-Card?tab=readme-ov-file" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="link_para_pagina_web" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Ver Projeto
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="project-card">
+                <img src="../img/projetos/NFT preview card component.jpg" alt="Projeto 2">
+                <div class="project-info">
+                  <div class="project-title">NFT preview card component <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                  <div id="css-projeto" class="project-title"><i class='bx bxs-circle' style='color:#A87DCB'  ></i>CSS</div>
+                  <div class="project-links">
+                    <a href="https://github.com/Jamyle-Elen/NFT-preview-card-component-FRONTEND-MENTOR" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="link_para_pagina_web" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Ver Projeto
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="project-card">
+                <img src="../img/projetos/3-column preview card component.jpg" alt="Projeto 2">
+                <div class="project-info">
+                  <div class="project-title">3 Column Preview Card Component <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                  <div id="html-projeto" class="project-title"><i class='bx bxs-circle' style='color:#a84e39'  ></i>HTML</div>
+                  <div class="project-links">
+                    <a href="https://github.com/Jamyle-Elen/3-column-preview-card-component-FRONTEND-MENTOR" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="link_para_pagina_web" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Ver Projeto
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="project-card">
+                <img src="../img/projetos/Single price grid component.jpg" alt="Projeto 2">
+                <div class="project-info">
+                  <div class="project-title">Single price grid component <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                  <div id="css-projeto" class="project-title"><i class='bx bxs-circle' style='color:#a84e39'  ></i>HTML</div>
+                  <div class="project-links">
+                    <a href="https://github.com/Jamyle-Elen/single-price-grid-component-FRONTEND" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="link_para_pagina_web" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Ver Projeto
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7 -->
+              <div class="project-card">
+                <img src="../img/projetos/Order summary component.jpg" alt="Projeto 2">
+                <div class="project-info">
+                  <div class="project-title">Order summary component <i class='bx bxs-message-square-check' style='color:#3A7944'  ></i></div>
+                  <div id="css-projeto" class="project-title"><i class='bx bxs-circle' style='color:#A87DCB'  ></i>CSS</div>
+                  <div class="project-links">
+                    <a href="https://github.com/Jamyle-Elen/order-summary-component-FRONTEND-MENTOR" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="link_para_pagina_web" target="_blank">
+                      <i class="fas fa-external-link-alt"></i> Ver Projeto
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
     </section>
     <footer>
         <div class="footer">
@@ -125,14 +224,6 @@
                     <a href="#"><i class='bx bxs-envelope' style='color:#fff' ></i></a>
                 </div>
             </div>
-            <div class="element-1">
-                <div class="subdiv">
-                    <div class="div"><a href="#"><i class='bx bxs-envelope' style='color:#fff' ></i></a></div>
-                </div>
-                <div class="subdiv">
-                    <div class="div"><a href="#"><i class='bx bxs-envelope' style='color:#fff' ></i></a></div>
-                                </div>
-                </div>
         </div>
             <div id="section_one" class="margin-top-2">
                 <div class="circle">
