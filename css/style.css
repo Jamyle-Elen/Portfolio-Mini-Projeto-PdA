@@ -46,7 +46,6 @@ body {
 }
 
 header {
-  border: #333 solid;
   height: 8vh;
   display: flex;
   justify-content: space-between;
